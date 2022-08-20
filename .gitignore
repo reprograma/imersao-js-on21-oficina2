@@ -2,10 +2,4 @@
 .DS_Store
 package-lock.json
 /coverage
-/coverage/lcov-report/*
-/coverage/lcov-report
-clover.xml
-coverage-final.json
-coverage-summary.json
-/coverage/
 LICENSE
