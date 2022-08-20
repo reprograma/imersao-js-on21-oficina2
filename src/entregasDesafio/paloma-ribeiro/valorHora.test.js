@@ -1,7 +1,10 @@
 const { calcularValorPorHora} = require('../../dominio/calculadora/Hora/valorHora')
 
+describe('teste de soma simples', () => {
+
 test ('1 + 2 é 3', ()=> {
     expect(1 + 2).toBe(3)
+})
 })
 
 test('Calcular o valor por hora para 1000 reais mensais', () => {
