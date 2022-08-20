@@ -16,8 +16,8 @@ describe('Calcular Horas de Projeto' , () => {
         expect(horasCalculadas).toBe(horasDeProjetoEsperadas)
     })
 
-    // test('', () => {
+    test('', () => {
         
-    // })
+    })
 
 })
