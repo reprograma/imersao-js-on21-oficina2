@@ -1,0 +1,4 @@
+
+> aceleradora-js-desafio@1.0.0 test C:\Users\Silvia\Documents\Workshop de testes\imersao-js-on21-oficina2
+> jest "/" "test.skip" "-" "rodar" "somente" "esse" "arquivo"
+
