@@ -1,12 +1,14 @@
 const {} = require('../../dominio/calculadora/Projeto/valorProjeto')
+const { calcularHorasDeProjeto } = require('../../dominio/calculadora/Projeto/horasPorProjeto');
 
 describe('calcularValorTotalProjeto',() => {
     test('Calculo do valor total do projeto', () => {
         const totalDeHorasPorProjeto = calcularHorasDeProjeto(funcionalidades);
-        const pacote = calcularPacote(totalDeHorasPorProjeto);
         const valorBase = calcularValorBaseProjeto(totalDeHorasPorProjeto, valorHora);
 
-        expect(valorBase).toBe(1000)
+
+
+        expect(totalDeHorasPorProjeto).toBe(valorBase)
     })
 
 })
