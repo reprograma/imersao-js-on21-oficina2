@@ -23,4 +23,20 @@ describe('calcular Pacote' , () => {
 
         expect(pacote).toBe('pacote_basico')
     } )
+
+    test('Pacote para projeto de 100 horas', () => {
+           horasPorProjeto.calcularHorasDeProjeto.mockReturnValueOnce(100)
+           const horasDeProjeto = horasPorProjeto.calcularHorasDeProjeto()
+           const pacote = calcularPacote(horasDeProjeto)
+   
+           expect(pacote).toBe("pacote_intermediario")
+       })
+
+       test('Pacote para projeto de 200 horas', () => {
+        horasPorProjeto.calcularHorasDeProjeto.mockReturnValueOnce(200)
+        const horasDeProjeto = horasPorProjeto.calcularHorasDeProjeto()
+        const pacote = calcularPacote(horasDeProjeto)
+
+        expect(pacote).toBe("pacote_premium")
+    })
 })
