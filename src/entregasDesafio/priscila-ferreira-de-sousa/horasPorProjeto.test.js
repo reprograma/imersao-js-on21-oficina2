@@ -14,4 +14,4 @@ describe('calcularHorasDeProjeto', () => {
         const horasProjetoEsperadas = 64
         expect(horasCalculadas).toBe(horasProjetoEsperadas)
     })
-})Adicionado teste para calcular valor por hora
+})
