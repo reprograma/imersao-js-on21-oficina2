@@ -1,4 +1,4 @@
-const {} = require('../../dominio/calculadora/Projeto/pacote')
+const { calcularPacote } = require('../../dominio/calculadora/Projeto/pacote')
 const horasPorProjeto = require('../../dominio/calculadora/Projeto/horasPorProjeto')
 
 jest.mock('../../dominio/calculdora/Projeto/horasPorProjeto')
