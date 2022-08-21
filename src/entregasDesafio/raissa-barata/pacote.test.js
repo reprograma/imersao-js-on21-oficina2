@@ -18,4 +18,10 @@ describe(' calcula pacote', () => {
 
         expect(pacote).toBe('pacote_basico');
     })
+
+    test('pacote com mais 100h horas de projeto', () => {
+        const pacote = calcularPacote(105)
+
+        expect(pacote).toBe('pacote_premium');
+    })
 } )
