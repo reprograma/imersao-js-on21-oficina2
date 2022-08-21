@@ -5,7 +5,7 @@ describe('Calcular horas projeto', () => {
         const listaDeFuncionalidades = [
             'formulario', 
             'construcao_1_pagina',
-            'construcao_2_pagina',
+            'construcao_1_pagina',
             'integracao_api_propria'
         ]
         
