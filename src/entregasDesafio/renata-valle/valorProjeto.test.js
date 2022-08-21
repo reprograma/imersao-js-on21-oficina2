@@ -5,11 +5,12 @@ const { calcularValorPorHora } = require("../../dominio/calculadora/Hora/valorHo
 
 const valorPorHora = require("../../dominio/calculadora/Hora/valorHora");
 jest.mock("../../dominio/calculadora/Hora/valorHora")
+
 valorPorHora.calcularValorPorHora.mockReturnValue(10)
 
 const valorHora = calcularValorPorHora()
 
-describe("clacular Valor Total Projeto", () => {
+describe("Calcular valor total projeto, esperado: 440 reais", () => {
   test("funcionalidade", () => {
     const ListaDeFuncionalidades = [
       "formulario",
@@ -17,12 +18,12 @@ describe("clacular Valor Total Projeto", () => {
       "integracao_api_propria",
     ];
 
-    //const funValorProjeto = calcularValorTotalProjeto(ListaDeFuncionalidades, valorHora);
+    const funValorProjeto = calcularValorTotalProjeto(ListaDeFuncionalidades, valorHora);
 
     // console.log(funValorProjeto);
     // console.log(ListaDeFuncionalidades);
     // console.log(valorHora);
 
-    expect(calcularValorTotalProjeto(ListaDeFuncionalidades, valorHora))
+    expect(funValorProjeto).toBe(440)
   });
 });
