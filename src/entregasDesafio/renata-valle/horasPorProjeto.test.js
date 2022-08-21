@@ -8,7 +8,7 @@ describe('CalcularHorasDeProjeto', () => {
             'integracao_api_propria'
         ]
         const horasCalculadas = calcularHorasDeProjeto(ListaDeFuncionalidades)
-        const horasDeProjetoEsperadas = 64
+        const horasDeProjetoEsperadas = 40
 
         expect(horasCalculadas).toBe(horasDeProjetoEsperadas)
     })
